@@ -70,7 +70,7 @@ const PlaceShips = (props) => {
 
   return (
     <>
-      <Grid container direction='row'>
+      <Grid container direction='row' style={{ overflowX: 'auto' }}>
         <Grid item xs={12}>
           <PlaceShipGrid
             playerShipGrid={playerShipGrid}

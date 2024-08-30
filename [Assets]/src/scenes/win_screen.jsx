@@ -26,7 +26,7 @@ const WinScreen = (props) => {
   './onfire.jpg';
 
   return (
-    <Grid container spacing={2} justifyContent='center' alignItems='center'>
+    <Grid container spacing={2} justifyContent='center' alignItems='center' style={{ overflowX: 'auto' }}>
       <Grid item xs={12}>
         <Typography variant='h2' align='center'>
           {gameState.playerWon ? 'Congratulations, You Won!' : 'Game Over, The AI Won!'}

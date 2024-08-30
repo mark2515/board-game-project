@@ -73,7 +73,7 @@ const GameContent = (props) => {
   }, [gameLog, playerBattleGrid, enemyBattleGrid, setStats]);
 
   return (
-    <Grid direction='row' container justifyContent='center' alignItems='center'>
+    <Grid direction='row' container justifyContent='center' alignItems='center' style={{ overflowX: 'auto' }}>
       <Grid item xs={12} container justifyContent='center' alignItems='center'>
         <TurnIndicator
           playerTurn={gameState.playerTurn}

@@ -19,7 +19,7 @@ const UserStats = (props) => {
   return (
     <>
       <MainMenuAnimatedBackground minimizeAnimations={minimizeAnimations}/>
-      <Grid container spacing={3}>
+      <Grid container spacing={3} style={{ overflowX: 'auto' }}>
         <Grid item xs={12}>
           <Typography variant='h3' align='center'>User Profile</Typography>
         </Grid>
