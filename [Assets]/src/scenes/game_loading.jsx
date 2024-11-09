@@ -30,7 +30,7 @@ const GameLoading = (props) => {
       const countdownTimer = setTimeout(() => {
         setCountdown(countdown - 1);
         setStatusMessage(STATUS_MESSAGES[STATUS_MESSAGES.length - countdown]);
-      }, 2000);
+      }, 1000);
 
       return () => clearTimeout(countdownTimer);
     } else {
@@ -41,7 +41,7 @@ const GameLoading = (props) => {
   React.useEffect(() => {
     const tipTimer = setTimeout(() => {
       setTipIndex(getNextTipIndex);
-    }, 5000);
+    }, 3000);
 
     return () => clearTimeout(tipTimer);
   }, [tipIndex]);
